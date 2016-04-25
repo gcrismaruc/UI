@@ -1,0 +1,47 @@
+body{
+	background-color:white;
+	font-family: 'Source Sans Pro', sans-serif;
+	color: #4b4b4b;
+}
+
+
+#navbar{
+    height: 80px;
+	width: 960px;
+	border-bottom:12px solid;
+	border-top:12px;
+	border-right: 1px solid #ccc;
+}
+#Logo{
+	width:20px;
+	height:20px;
+	float:right;
+	display:inline;
+}
+
+#site {
+	width:960px;
+	display: block;
+}
+
+#three {
+	margin:0.5px;
+	height:60px;
+}
+
+#aloneInput{
+	height:90px;
+}
+
+#submit{
+	float:right;
+}
+
+
+footer {
+	background-color:gray;	
+}	
+footer ul{
+	float:right;
+	
+}

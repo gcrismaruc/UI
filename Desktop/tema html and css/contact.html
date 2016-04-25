@@ -1,0 +1,94 @@
+<html>
+<head>
+	<title>Graduates</title>
+	<link rel="stylesheet" type="text/css" href="css/styleContact.css">
+	 <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div class="container">
+		<header >
+				<img class ="col-xs-12 img-responsive"src="img/endava.jpg" />
+		</header>
+
+		<nav class ="col-xs-12 inlineNav">
+			<ul class="list-inline inlineNav">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">Contact</a></li> 
+				</ul>
+				
+				<a href="#"><img class="inlineNav" align="center" id="Logo" src="img/facebook.png"></a>
+				<a href="#"><img class="inlineNav" id="Logo" src="img/twitter.png"></a>
+			</div>
+		</nav>
+
+
+	<br>
+	<div class="container">
+		<div style = "border-bottom:1px solid gray;border-top:1px solid gray;">
+			<h2 align="center">Contact US</h2>
+		</div>
+	</div>
+	
+	<br>
+	<form name="myForm">
+		<div class="container" >
+				<input class="img-responsive col-xs-4" id="three" name="name" placeholder="Name"></input>
+				<input class="img-responsive col-xs-4" id="three" name="email" placeholder="Email"></input>
+				<input class="img-responsive col-xs-4" id="three" name="website" placeholder="Website"></input>
+		</div>
+		<br>
+		<div class="container">
+			<input class="col-xs-12 img-responsive" id="aloneInput" name="message" placeholder="Message"></input>
+		</div>
+		<br>
+		<div class="container">
+			<button type="button" class="btn btn-info" id="submit" type="submit" onclick="myFunction()" name="submit">Submit</button>
+		</div>
+	</form>
+		<br>
+		
+	<div class="container">
+		<p align="center" id="demo"></p>
+	</div>
+	
+	<footer class="col-xs-12">
+			<p class="inlineNav">&copy;2016 Endava Graduates</p>
+			<ul class="list-inline">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Work</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+	</footer>
+	
+	
+
+	<script>
+	
+		function myFunction() {
+			var name = document.forms["myForm"]["name"].value;
+				if (name == null || name == "") {
+					alert("Name must be filled out");
+					return false;
+				}
+			var pattern = "^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"; 
+			var email = document.forms["myForm"]["email"].value;
+				if (email.match(pattern)) {
+					alert("Email incorrect");
+					return false;
+				}
+			
+			document.getElementById("demo").innerHTML = "Hello  " + name;
+			console.log("aici");
+		}
+	
+	
+	</script>
+</body>
+
+</html>
